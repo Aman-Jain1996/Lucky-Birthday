@@ -8,8 +8,8 @@ export default function App() {
   const [mistake, setMistake] = useState("");
   const [color, setColor] = useState("");
 
-  const outputPass = `<div class="output-div">Hurray!! You are a lucky person !<img width="100%" height="200px" src="/pass.svg" alt="image"></div>`;
-  const outputFail = `<div class="output-div">Oops!! Number is not lucky for you , chill !<img width="100%" height="200px" src="/fail.svg" alt="image"></div>`;
+  const outputPass = `<div class="output-div">Hurray!! You are a lucky person !<img width="100%" height="100px" src="/pass.svg" alt="image"></div>`;
+  const outputFail = `<div class="output-div">Oops!! Number is not lucky for you , chill !<img width="100%" height="100px" src="/fail.svg" alt="image"></div>`;
 
   function spanHandler(e) {
     document.querySelector(".flex-privacy").style.display = "none";
@@ -73,7 +73,9 @@ export default function App() {
             Hi user check if your birthday is lucky or not ?
             <br />A birthday is lucky if sum of all the digits of your
             birth-date is divisible by your lucky number.{" "}
-            <a href="#luckyId">Check it out here...</a>
+            <a href="#luckyId">
+              <strong>Click here</strong> to check it out ...
+            </a>
           </div>
         </div>
       </div>

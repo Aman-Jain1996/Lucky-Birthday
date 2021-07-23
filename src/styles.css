@@ -5,7 +5,6 @@ body {
 
 .App {
   width: 100%;
-  max-width: 400px;
   font-family: sans-serif;
   text-align: center;
   margin: auto;
@@ -24,6 +23,8 @@ body {
 
 .output-div {
   padding: 1rem;
+  min-height: 100px;
+  position: relative;
 }
 
 .output-div img {
@@ -136,7 +137,6 @@ footer {
   border-radius: 0 2rem 0 0;
   box-sizing: border-box;
   width: 100%;
-  max-width: 400px;
   padding: 1rem;
   margin-top: 1rem;
 }
