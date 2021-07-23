@@ -4,11 +4,22 @@ body {
 }
 
 .App {
+  width: 100%;
   max-width: 400px;
   font-family: sans-serif;
   text-align: center;
   margin: auto;
+}
+
+.image-container {
   box-sizing: border-box;
+  background-image: url("https://images.unsplash.com/photo-1553135422-400ee5852b27?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=398&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  min-height: 100vh;
 }
 
 .output-div {
@@ -20,6 +31,7 @@ body {
 }
 
 .App h1 {
+  transition: all 1s ease-in-out;
   background-color: #9960b5;
   width: 100%;
   margin: auto;
@@ -33,12 +45,14 @@ body {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
 label {
   margin: 20px 1rem;
+  color: rgba(0, 0, 0, 1);
+  font-weight: bolder;
 }
 
 input {
@@ -62,6 +76,26 @@ button:hover {
   box-shadow: 2px 5px 2px black;
   transition: ease-in-out 0.1s all;
   border: 2px solid goldenrod;
+}
+
+.welcome-div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.welcome-div div {
+  opacity: 0.7;
+  border: 2px solid #9960b5;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 90%;
+  font-size: 1.2rem;
+  box-shadow: 2px 2px 10px 2px black;
+  font-weight: bolder;
 }
 
 .flex-privacy {
@@ -90,12 +124,6 @@ button:hover {
   display: inline-block;
   font-weight: bold;
   cursor: pointer;
-}
-
-@media screen and (max-width: 800px) {
-  .App {
-    margin-top: 25vh;
-  }
 }
 
 .flex i {

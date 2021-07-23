@@ -67,81 +67,89 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Lucky Birthday</h1>
-      <div className="flex-container">
-        <p>
-          <br />A birthday is lucky if sum of all the digits of your birth-date
-          is divisible by your lucky number. Check it out here...
-        </p>
-        <label>Put in your DOB here: </label>
-        <input type="date" name="date-input" onChange={onChangeHandler} />
-        <label>Please provide your lucky number:</label>
-        <input
-          type="number"
-          name="number-input"
-          min="0"
-          onChange={onChangeHandler}
-        />
-      </div>
-      <div className="flex-privacy">
-        <p>
-          <strong style={{ color: "red" }}>Privacy Notice!</strong> We are not
-          storing your personal data.
-        </p>
-        <span onClick={spanHandler}>X</span>
-      </div>
-      <button onClick={onClickHandler}>Check</button>
-      <button onClick={resetHandler}>Reset</button>
-      <div className="output-div" style={{ color }}>
-        {mistake}
-      </div>
-      <footer>
-        <span className="footer-span">Connect me at :</span>
-        <div className="flex">
-          <a
-            href="https://www.instagram.com/ajain8479"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i className="fab fa-instagram" title="Instagram"></i>
-          </a>
-          <a
-            href="https://twitter.com/ajain84791"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i className="fab fa-twitter" title="Twitter"></i>
-          </a>
-          <a
-            href="https://github.com/Aman-Jain1996"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <i className="fab fa-github" title="Github"></i>
-          </a>
-          <a
-            href="https://portfolio-amanjain.netlify.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fas fa-briefcase" title="Portfolio"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/aman-jain-8082b510a/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fab fa-linkedin" title="LinkedIn"></i>
-          </a>
+      <div className="image-container">
+        <div className="welcome-div">
+          <div>
+            Hi user check if your birthday is lucky or not ?
+            <br />A birthday is lucky if sum of all the digits of your
+            birth-date is divisible by your lucky number.{" "}
+            <a href="#luckyId">Check it out here...</a>
+          </div>
         </div>
-        <p>
-          Made with{" "}
-          <span role="img" aria-label="">
-            💛
-          </span>{" "}
-          by @AJ-Creations
-        </p>
-      </footer>
+      </div>
+      <div style={{ minHeight: "100vh" }}>
+        <h1 id="luckyId">Lucky Birthday</h1>
+        <div className="flex-container">
+          <label>Put in your DOB here: </label>
+          <input type="date" name="date-input" onChange={onChangeHandler} />
+          <label>Please provide your lucky number:</label>
+          <input
+            type="number"
+            name="number-input"
+            min="0"
+            onChange={onChangeHandler}
+          />
+        </div>
+        <div className="flex-privacy">
+          <p>
+            <strong style={{ color: "red" }}>Privacy Notice!</strong> We are not
+            storing your personal data.
+          </p>
+          <span onClick={spanHandler}>X</span>
+        </div>
+        <button onClick={onClickHandler}>Check</button>
+        <button onClick={resetHandler}>Reset</button>
+        <div className="output-div" style={{ color }}>
+          {mistake}
+        </div>
+        <footer>
+          <span className="footer-span">Connect me at :</span>
+          <div className="flex">
+            <a
+              href="https://www.instagram.com/ajain8479"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-instagram" title="Instagram"></i>
+            </a>
+            <a
+              href="https://twitter.com/ajain84791"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-twitter" title="Twitter"></i>
+            </a>
+            <a
+              href="https://github.com/Aman-Jain1996"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <i className="fab fa-github" title="Github"></i>
+            </a>
+            <a
+              href="https://portfolio-amanjain.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fas fa-briefcase" title="Portfolio"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/aman-jain-8082b510a/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fab fa-linkedin" title="LinkedIn"></i>
+            </a>
+          </div>
+          <p>
+            Made with{" "}
+            <span role="img" aria-label="">
+              💛
+            </span>{" "}
+            by @AJ-Creations
+          </p>
+        </footer>
+      </div>
     </div>
   );
 }
