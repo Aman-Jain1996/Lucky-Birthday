@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.output-div {
+  padding: 1rem;
+}
+
+.output-div img {
+  margin-top: 1rem;
+}
+
+.App h1 {
+  background-color: #9960b5;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem 0px 1rem 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+label {
+  margin: 20px 1rem;
+}
+
+input {
+  width: 40%;
+  border-radius: 2rem 1rem;
+  padding: 1rem;
+  outline: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  font-size: 1.1rem;
+  box-shadow: 2px 5px 2px black;
+  transition: ease-in-out 0.1s all;
+  border: 2px solid goldenrod;
+}
+
+.flex-privacy {
+  position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 250px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  top: 10px;
+  right: 20px;
+  border: 1px solid red;
+  border-radius: 1.2rem 0rem 1.2rem 1.2rem;
+  background-color: rgba(205, 97, 85, 0.3);
+}
+
+.flex-privacy p {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 0 5px;
+}
+
+.flex-privacy span {
+  padding-right: 10px;
+  padding-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    margin-top: 25vh;
+  }
+}
+
+.flex i {
+  color: black;
+}
+
+footer {
+  background-color: #9960b5;
+  border-radius: 0 2rem 0 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  cursor: pointer;
+}
+
+.footer-span {
+  display: block;
+  text-align: center;
+  color: whitesmoke;
+}
