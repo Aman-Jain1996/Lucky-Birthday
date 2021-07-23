@@ -4,10 +4,11 @@ body {
 }
 
 .App {
+  max-width: 400px;
   font-family: sans-serif;
   text-align: center;
-  max-width: 500px;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .output-div {
@@ -22,9 +23,9 @@ body {
   background-color: #9960b5;
   width: 100%;
   margin: auto;
-  margin-top: 1rem;
   padding: 1rem;
   border-radius: 1rem 0px 1rem 0;
+  box-sizing: border-box;
 }
 
 .flex-container {
