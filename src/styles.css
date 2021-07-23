@@ -31,12 +31,12 @@ body {
 }
 
 .App h1 {
-  transition: all 1s ease-in-out;
   background-color: #9960b5;
   width: 100%;
   margin: auto;
+  margin-top: 2rem;
   padding: 1rem;
-  border-radius: 1rem 0px 1rem 0;
+  border-radius: 0rem 0px 1rem 0;
   box-sizing: border-box;
 }
 
@@ -92,7 +92,7 @@ button:hover {
   border: 2px solid #9960b5;
   border-radius: 2rem;
   padding: 1rem;
-  width: 90%;
+  width: 80%;
   font-size: 1.2rem;
   box-shadow: 2px 2px 10px 2px black;
   font-weight: bolder;
@@ -131,12 +131,19 @@ button:hover {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   background-color: #9960b5;
   border-radius: 0 2rem 0 0;
   box-sizing: border-box;
   width: 100%;
+  max-width: 400px;
   padding: 1rem;
   margin-top: 1rem;
+}
+
+.content {
+  position: relative;
 }
 
 .flex {

@@ -77,7 +77,14 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div style={{ minHeight: "100vh" }}>
+      <div className="flex-privacy">
+        <p>
+          <strong style={{ color: "red" }}>Privacy Notice!</strong> We are not
+          storing your personal data.
+        </p>
+        <span onClick={spanHandler}>X</span>
+      </div>
+      <div className="content" style={{ minHeight: "100vh" }}>
         <h1 id="luckyId">Lucky Birthday</h1>
         <div className="flex-container">
           <label>Put in your DOB here: </label>
@@ -89,13 +96,6 @@ export default function App() {
             min="0"
             onChange={onChangeHandler}
           />
-        </div>
-        <div className="flex-privacy">
-          <p>
-            <strong style={{ color: "red" }}>Privacy Notice!</strong> We are not
-            storing your personal data.
-          </p>
-          <span onClick={spanHandler}>X</span>
         </div>
         <button onClick={onClickHandler}>Check</button>
         <button onClick={resetHandler}>Reset</button>
